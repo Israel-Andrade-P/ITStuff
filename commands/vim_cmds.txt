@@ -5,17 +5,37 @@ w - moves faster | b - moves back | e - skips words | 0 - moves back to the begi
 shift + m - brings you to the center of the page
 dw - deletes a word | dd - deletes a line | diw - delete in word | dip - delete in paragraph 
 yw - yanks a word | yy - yanks a line | yiw - yank in word | yip - yank in paragraph | ggvGy - yanks the whole file from the top
+ciw - change in word
 % - goes to next of the pair ex: {}, ()
+* - searches for a word under cursor | n - goes foward in match search | shift + n - goes back
+. - replays the last command
+" "reg number" p - pastes from registers | " "reg number" y - yanks into a register number
+qh (h is a register) - records a macro, manually type a command, to replay the macro do @h (h is the register you recorded the action in)
 
 COMMAND MODE:
 : - enter command mode | q - quit | wq - save and quit | q! - quit without saving
 r "file" - reads a file into current file | w "new file" - writes into a new file
 ! - allows to enter linux commands within vim
+e "file" - opens a new buffer with "file" contents | enew - creates an empty buffer | bn - goes to next buffer | bp - goes to previous buffer | bd - deletes buffer
+badd "file" - adds a new buffer without switching to it
+%s/"text to change"/"change to this"/g - find and replace a word | same but gc at the end - replaces words but with confirmations
+split or sp "file" - splits screen with two files | ctrl+ww - while in split mode jumps back and forth 
+vsplit or vsp or vs "file" - splits the screen vertically
+set number - adds line numbers | set nonumber - turns it off
+reg - check registers
 
 INSERT MODE:
 i or a | a + shift - enters insert mode and goes all the way to the wnd of a line
 
+VISUAL MODE:
+v - enters visual mode
+:sort ui - sorts highlighted text alphabetically
+viw - visual in word
+
 REPLACE MODE:
 shift + r - enters REPLACE mode
 
+GENERAL:
+vim +"line number" "file" - opens file on provided line number
+vim -O "file1" "file2" - opens files in split mode
 
