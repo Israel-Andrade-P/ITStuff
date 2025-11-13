@@ -1,0 +1,24 @@
+cut -d: -f1 /etc/passwd - List all usernames
+
+-head prints the first n lines - head -n n file.txt
+
+-tail prints the last n lines - tail -n n file.txt
+
+-less let you view the contents of a file - less -N(show line numbers) file.txt (use enter or space to go down b to go back)
+
+-openssl rand -base64 64 - Generates secrets
+
+-command -v "app" - shows path to where something is installed
+
+-grep -r "string" "directory" - searchs entire dirs and sub dirs
+
+-find "dir" -name "somefile.txt" - finds a file with that name
+ find "dir" -name "*.csv" or find "dir" -name "*chad*"
+
+PERMISSIONS:
+-chmod -R u=rwx,g=,o= "dir" -  changes perms recursivily in all files of a dir
+-chmod -x "file" - removes exec perm | chmod u+x "file" - adds exec perm to owner
+-sudo chown -R "user" "dir" - changes owner of an entire dir
+
+SPECIAL COMMANDS:
+duf - shows hard drive usage

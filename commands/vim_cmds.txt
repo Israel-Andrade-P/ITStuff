@@ -1,0 +1,21 @@
+NORMAL MODE:
+x - deletes a character | u - undoes stuff
+gg - Goes all the way to the top | shift + g - goes all the way down
+w - moves faster | b - moves back | e - skips words | 0 - moves back to the beginning of a line | $ - moves to the end of a line
+shift + m - brings you to the center of the page
+dw - deletes a word | dd - deletes a line | diw - delete in word | dip - delete in paragraph 
+yw - yanks a word | yy - yanks a line | yiw - yank in word | yip - yank in paragraph | ggvGy - yanks the whole file from the top
+% - goes to next of the pair ex: {}, ()
+
+COMMAND MODE:
+: - enter command mode | q - quit | wq - save and quit | q! - quit without saving
+r "file" - reads a file into current file | w "new file" - writes into a new file
+! - allows to enter linux commands within vim
+
+INSERT MODE:
+i or a | a + shift - enters insert mode and goes all the way to the wnd of a line
+
+REPLACE MODE:
+shift + r - enters REPLACE mode
+
+
