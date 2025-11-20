@@ -1,0 +1,5 @@
+DB queries:
+SELECT current_user; | SELECT user; - shows current logged in user
+
+psql:
+psql -h localhost -U zel -d postgres - connect as zel to postgres

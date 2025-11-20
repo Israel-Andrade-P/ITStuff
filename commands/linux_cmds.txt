@@ -10,10 +10,16 @@ cut -d: -f1 /etc/passwd - List all usernames
 
 -command -v "app" - shows path to where something is installed
 
+-which "program" - shows the location of an installed command line program
+
 -grep -r "string" "directory" - searchs entire dirs and sub dirs
 
 -find "dir" -name "somefile.txt" - finds a file with that name
  find "dir" -name "*.csv" or find "dir" -name "*chad*"
+
+-env - lists env variables in shell
+export VARIABLE="value" - sets a env variable in shell for cuurent session only
+-wc "file"  - prints new line, word and byte count of a file
 
 PERMISSIONS:
 -chmod -R u=rwx,g=,o= "dir" -  changes perms recursivily in all files of a dir

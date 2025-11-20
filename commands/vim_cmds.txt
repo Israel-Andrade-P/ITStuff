@@ -12,6 +12,8 @@ dw - deletes a word | dd - deletes a line | diw - delete in word | dip - delete 
 yw - yanks a word | yy - yanks a line | yiw - yank in word | yip - yank in paragraph | ggvGy - yanks the whole file from the top
 ciw - change in word | cip - change in paragraph
 gUap - uppercases a paragraph
+ci" - change in " | ci( - change in (
+gUiw - uppercase in word | gui" - lowercase in " | yi( - yank in ( | vi{ - select in { | =ip - indent in paragraph
 
 * - searches for a word under cursor | n - goes foward in match search | shift + n - goes back
 . - replays the last command
@@ -42,7 +44,9 @@ VISUAL MODE:
 v - enters visual mode
 shift + v - visual line mode
 c - change selected text
-> - indent selected lines | < - outdent selected lines
+> - indent selected lines | < - outdent selected lines | = - auto indents selected text
+g + u - makes selection lowercase | g + U - makes selction uppercase
+vaw - v around a word
 :sort ui - sorts highlighted text alphabetically
 viw - visual in word
 t"char" - move cursor to before char | f"char" - move cursor to char
