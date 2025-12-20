@@ -1,0 +1,4 @@
+% - creates file
+d - creates directory
+:Ex - returns to netrw | remapped this command to -> SPACE pv
+:so - resources a file

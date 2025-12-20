@@ -20,6 +20,9 @@ cut -d: -f1 /etc/passwd - List all usernames
 -env - lists env variables in shell
 export VARIABLE="value" - sets a env variable in shell for cuurent session only
 -wc "file"  - prints new line, word and byte count of a file
+-ps aux - shows ongoing proccesses and IDs
+-kill "PID" - kills a specific proccess
+-top - task manager for clis, press M to sort by RAM usage
 
 PERMISSIONS:
 -chmod -R u=rwx,g=,o= "dir" -  changes perms recursivily in all files of a dir

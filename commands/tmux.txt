@@ -1,0 +1,23 @@
+tmux new -s "session name" - creates new session with a name
+tmux ls - lists all current sessions
+tmux a - attaches to most recent session
+tmux a -t "index" - attaches to a specific session
+tmux kill-session -t "session name" - kills a session
+tmux kill-server - kills it all
+
+In Session cmds:
+ctrl + b then d - detaches
+ctrl + b then % - creates a new pane vertically
+ctrl + b then " - creates a new pane horizontally
+ctrl + b + arrows - switches panes
+ctrl + b + q + index number  - jumps to a pane by index
+ctrl + b then ctrl + arrows - changes size of pane
+ctrl +b then ctrl + alt + 1 to 6 - default layouts
+ctrl + b then c - creates a new window
+ctrl + b then n - goes through the windows
+ctrl + b then , - changes window name
+ctrl + b then w - displays all sessions and windows
+ctrl + b then x - kills pane
+ctrl + b then % - closes window
+ctrl + b then [ - enters copy mode
+in copy mode press SPACE to start copying with vim motions, then ENTER to stop. ctrl + b then ] to paste

@@ -5,6 +5,7 @@ w - moves faster | b - moves back | e - skips words | 0 - moves back to the begi
 shift + m - brings you to the center of the page
 ctrl + d - go down a file | ctrl + u - go up a file | ctrl + f - foward screen | ctrl + b - backward screen
 % - goes to next of the pair ex: {}, ()
+line number G - jumps to that line
 
 *Text Editing:
 x - deletes a character | u - undoes stuff
@@ -12,8 +13,9 @@ dw - deletes a word | dd - deletes a line | diw - delete in word | dip - delete 
 yw - yanks a word | yy - yanks a line | yiw - yank in word | yip - yank in paragraph | ggvGy - yanks the whole file from the top
 ciw - change in word | cip - change in paragraph
 gUap - uppercases a paragraph
-ci" - change in " | ci( - change in (
+ci" - change in " | ci( or cib - change in braces | ci{ or ciB - change in curly braces
 gUiw - uppercase in word | gui" - lowercase in " | yi( - yank in ( | vi{ - select in { | =ip - indent in paragraph
+J - brings a line up to the current line | gJ - does the same but no space between lines
 
 * - searches for a word under cursor | n - goes foward in match search | shift + n - goes back
 . - replays the last command
@@ -50,6 +52,7 @@ vaw - v around a word
 :sort ui - sorts highlighted text alphabetically
 viw - visual in word
 t"char" - move cursor to before char | f"char" - move cursor to char
+s/Headers\[\(.*\)]/Headers.Get(\1) - replace selected text s/text to replace/to this. This is using some regex stuff and [ or ( must be escaped with \
 
 REPLACE MODE:
 shift + r - enters REPLACE mode
