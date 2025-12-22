@@ -31,3 +31,6 @@ PERMISSIONS:
 
 SPECIAL COMMANDS:
 duf - shows hard drive usage
+
+NETWORK
+-netstat -ltnp - shows which programs are bound to which ports
