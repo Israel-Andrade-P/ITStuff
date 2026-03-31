@@ -2,3 +2,25 @@
 d - creates directory
 :Ex - returns to netrw | remapped this command to -> SPACE pv
 :so - resources a file
+
+Oil:
+- goes up in the file tree
+
+Treesitter:
+<SPACE> selects something, press again to go up the tree
+<BACK SPACE> to go down the slected tree
+
+Text objects:
+<daf> delete around function
+<vif> select in function
+<dic> delete in class
+<dao> delete around comment
+<vao> select around comment
+<leader> + a -> swaps parameters
+
+Fzf Lua:
+<SPACE>ff opens up fzf
+<SPACE>fc opens up nvim config file directory
+<SPACE>fo opens up files recently opened
+<SPACE><SPACE> opens current buffers
+<SPACE>/ opens a word finder in current file
