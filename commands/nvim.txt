@@ -24,3 +24,5 @@ Fzf Lua:
 <SPACE>fo opens up files recently opened
 <SPACE><SPACE> opens current buffers
 <SPACE>/ opens a word finder in current file
+
+K shows general info about a function, class, or variable

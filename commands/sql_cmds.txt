@@ -3,3 +3,16 @@ SELECT current_user; | SELECT user; - shows current logged in user
 
 psql:
 psql -h localhost -U zel -d postgres - connect as zel to postgres
+
+view: used to store large or complicated queries that are run often, so they can be easily called with a simpler command
+create view view_unique_students as select distinct name from students;
+
+procedures: are basically functions that abstract complex queries
+DELIMITER // -> cahnges the delimiter ; to // cause in the procedure theres a ; so we don't want to make mysql to think the command ends at the ;
+
+CREATE PROCEDURE GetStudents(IN id BIGINT)
+BEGIN
+    SELECT * FROM students WHERE students.id = id;
+    END 
+
+DELIMITER ;

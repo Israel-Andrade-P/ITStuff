@@ -47,6 +47,7 @@ logs flags: -f                         "follows the logs in realtime
             --tail <number>            " shows the <number> most recent logs 
 docker stats                           " shows resource usage for a container
 docker top <container>                 " shows running processes in a container  
+docker system prune -f                 " deletes all unused images and containers 
 ```
 ## Network
 ```
