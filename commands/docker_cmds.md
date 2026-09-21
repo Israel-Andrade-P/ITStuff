@@ -6,6 +6,7 @@ docker pull <image>                    " pulls an image from Docker Hub
 docker images                          " shows images
 docker rmi <img_id> or <img_name:tag>  " deletes an image
 docker build <dockerfile_path> -t <img_name>:<version> " build custom images
+docker commit <container> <new_image_name> " creates a new image based on a image running in a container
 ```
 
 ## Containers
